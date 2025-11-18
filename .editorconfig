@@ -16,3 +16,16 @@ indent_size = 2
 
 [compose.yaml]
 indent_size = 4
+
+[*.{js,ts,jsx,tsx,json}]
+indent_size = 2
+max_line_length = 100
+
+[*.{html,css,scss}]
+indent_size = 2
+max_line_length = 120
+
+[*.{svelte}]
+indent_size = 2
+max_line_length = 120
+
