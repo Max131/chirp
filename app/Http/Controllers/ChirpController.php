@@ -32,7 +32,7 @@ class ChirpController extends Controller
     {
         // Validate the request
         $validated = $request->validate([
-            'message' => 'required|string|max:255',
+            'message' => 'required|string|max:255|min:5',
         ]);
 
         // Create a new chirp
