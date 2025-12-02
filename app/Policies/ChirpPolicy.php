@@ -37,7 +37,8 @@ class ChirpPolicy
      */
     public function update(User $user, Chirp $chirp): bool
     {
-        return false;
+        // return false;
+        return $chirp->user()->is($user);
     }
 
     /**
