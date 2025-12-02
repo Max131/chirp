@@ -12,3 +12,5 @@ Route::delete('/chirps/{chirp}', [ChirpController::class, 'destroy']);
 /* Route::resource('chirps', ChirpController::class)->only([ */
 /*     'store', 'edit', 'update', 'destroy' */
 /* ]); */
+
+Route::view('/register', 'auth.register')->name('register');
